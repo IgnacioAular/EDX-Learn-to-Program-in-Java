@@ -7,7 +7,7 @@ public class Crypto
     {
         System.out.println(encryptString("ILIKEZOOS", 1, 1));
         System.out.println(encryptString("ILIKEAPPLES", -1, 2));
-        System.out.println(encryptString("This is some \"really\" great. (Text)!?", 1, 2));
+        System.out.println(encryptString("This is some \"really\" great. (Text)!?", 1, 3));
     }
 
     private static String normalizeText(String text)
@@ -48,19 +48,24 @@ public class Crypto
         StringBuilder groupifiedText = new StringBuilder();
 
         for (int i = 0; i < ceasarifiedText.length(); i += len)
-            if (i + len < ceasarifiedText.length()) {
+        {
+            if (i + len < ceasarifiedText.length())
+            {
                 groupifiedText.append(ceasarifiedText, i, i + len);
                 groupifiedText.append(" ");
-            } else {
+            }
+            else
+            {
                 String rest = ceasarifiedText.substring(i);
 
                 groupifiedText.append(rest);
 
-                for (int j = 0; j < len - rest.length(); j++) {
+                for (int j = 0; j < len - rest.length(); j++)
+                {
                     groupifiedText.append('x');
                 }
             }
-
+        }
         return groupifiedText.toString();
     }
 
@@ -103,7 +108,6 @@ public class Crypto
                 result.append(currChar);
             }
         }
-
         return result.toString();
     }
 }
