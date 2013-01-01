@@ -22,13 +22,10 @@ public class Crypto
         return text.toUpperCase();
     }
 
-    /*
     private static String obify(String normalizedText)
     {
-        String obifiedText = normalizedText.replaceAll("([AEIOUY])", "OB$1");
-        return obifiedText;
+        return normalizedText.replaceAll("([AEIOUY])", "OB$1");
     }
-    */
 
     private static String ceasarify(String normalizedText, int key)
     {
@@ -41,7 +38,6 @@ public class Crypto
 
         return ceasarifiedText.toString();
     }
-
 
     private static String groupify(String ceasarifiedText, int len)
     {
@@ -72,7 +68,7 @@ public class Crypto
     private static String encryptString(String text, int shift, int groupSize)
     {
         String encryptedString = normalizeText(text);
-        //encryptedString = obify(encryptedString);
+        encryptedString = obify(encryptedString);
         encryptedString = ceasarify(encryptedString, shift);
         encryptedString = groupify(encryptedString, groupSize);
 
@@ -111,6 +107,3 @@ public class Crypto
         return result.toString();
     }
 }
-
-
-
