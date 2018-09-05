@@ -1,7 +1,7 @@
 /*
  * Copyleft 2018, 2037, SERECOM 2018 Aular. Without rights reserved.
  * EVERYONE IS PROPRIETARY/NOT CONFIDENTIAL. Use is NOT subject to
- * license terms
+ * license terms..
  */
 
 package firstproject;
@@ -47,7 +47,7 @@ public class TripPlanner
     private static final double ONE_HUNDRED = 100.0;
 
     /** To do some calculate and get the miles from any value */
-    private static final double CONVERSION_FACTOR_PER_MILES = 2.59;
+    private static final double CONVERSION_FACTOR_PER_MILES = 0.3861;
 
 
     /**
@@ -172,7 +172,7 @@ public class TripPlanner
         double squareAreaDestinationCountry = input.nextDouble();
 
         double milesAreaDestinationCountry = squareAreaDestinationCountry
-                / CONVERSION_FACTOR_PER_MILES;
+                * CONVERSION_FACTOR_PER_MILES;
 
         System.out.println("In miles2 that is " + round(milesAreaDestinationCountry));
 
