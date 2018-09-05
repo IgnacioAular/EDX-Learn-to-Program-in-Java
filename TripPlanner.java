@@ -1,7 +1,7 @@
 /*
  * Copyleft 2018, 2037, SERECOM 2018 Aular. Without rights reserved.
  * EVERYONE IS PROPRIETARY/NOT CONFIDENTIAL. Use is NOT subject to
- * license terms.
+ * license terms
  */
 
 package firstproject;
