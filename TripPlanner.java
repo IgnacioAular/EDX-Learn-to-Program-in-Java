@@ -195,7 +195,7 @@ public class TripPlanner
 
     /**
      * Utility method to print a string of asteriscs as separator
-     * between paragraphs and produce two jumps of line
+     * between paragraphs and produce two jumps of line..
      */
     public static void separator()
     {

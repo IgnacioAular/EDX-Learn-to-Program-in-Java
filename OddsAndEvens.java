@@ -137,8 +137,8 @@ public class OddsAndEvens
     }
 
     /**
-     * Utility method to print a string of asteriscs as separator
-     * between paragraphs and produce two jumps of line
+     * Utility method to print a string of asterisks as separator
+     * between paragraphs.
      */
     private static void separator()
     {
